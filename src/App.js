@@ -17,11 +17,11 @@ class App extends Component {
     render() {
         return (
             <div>
-                {this.state.peopleInSpace.map((person) => person.name)}
-            </div>
-        )
+                {this.state.peopleInSpace.map((person, id) =>  <li key={id}>{person.name}</li>)}
+             </div>
+           )
+        }
     }
-}
 
 
 
